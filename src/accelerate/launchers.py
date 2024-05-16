@@ -229,7 +229,7 @@ def notebook_launcher(
                         run_id=rdzv_id,
                         rdzv_endpoint=rdzv_endpoint,
                         rdzv_backend=rdzv_backend,
-                        rdzv_config=rdzv_conf,
+                        rdzv_configs=rdzv_conf,
                         max_restarts=max_restarts,
                         monitor_interval=monitor_interval,
                         start_method="fork",
