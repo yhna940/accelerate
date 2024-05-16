@@ -85,11 +85,11 @@ def notebook_launcher(
         num_nodes (`int`, *optional*, defaults to 1):
             The number of nodes to use for training.
         rdzv_backend (`str`, *optional*, defaults to `"static"`):
-            The rdzv_backend to use in the rendezvous
+            The rendezvous method to use, such as 'static' (the default) or 'c10d'
         rdzv_endpoint (`str`, *optional*, defaults to `""`):
             The endpoint of the rdzv sync. storage.
         rdzv_conf (`Dict`, *optional*, defaults to `None`):
-            Key, value pair that specifies rendezvous specific configuration.
+            Additional rendezvous configuration.
         rdzv_id (`str`, *optional*, defaults to `"none"`):
             The unique run id of the job.
         max_restarts (`int`, *optional*, defaults to 0):
